@@ -16,7 +16,7 @@
 
 
 
-<title>Hello World | Hank-Yan</title>
+<title>使用 hexo 写博客的一些语法参考 | Hank-Yan</title>
 
 
 
@@ -203,7 +203,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">使用 hexo 写博客的一些语法参考</h1>
             
                 <div class="post-meta">
                     
@@ -221,19 +221,21 @@
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h3 id="1-如何插入链接"><a href="#1-如何插入链接" class="headerlink" title="1. 如何插入链接"></a>1. 如何插入链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">语法： [名称](链接地址)</span><br></pre></td></tr></table></figure>
+<p>这里演示插入一个链接，语法为 <code>[Hexo官网](https://hexo.io/)</code> , 效果为 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo官网</a>。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"我的文章"</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="启动本地服务器（用于演示效果）"><a href="#启动本地服务器（用于演示效果）" class="headerlink" title="启动本地服务器（用于演示效果）"></a>启动本地服务器（用于演示效果）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server 或者 hexo s</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate 或者  hexo g</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="发布到远端"><a href="#发布到远端" class="headerlink" title="发布到远端"></a>发布到远端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy 或者  hexo d</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="新建-tag-和-category"><a href="#新建-tag-和-category" class="headerlink" title="新建 tag 和 category"></a>新建 tag 和 category</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tag</span><br><span class="line">$ hexo new page category</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -246,11 +248,6 @@
                     </p>
                 
                 
-                    <p class="copyright-item">
-                        <span>Permalink:</span>
-                        <span><a href="yanhaoqiang.cn/2019/12/26/hello-world/">yanhaoqiang.cn/2019/12/26/hello-world/</a></span>
-                    </p>
-                
                 
                     <p class="copyright-item">
                         <span>License:</span>
@@ -260,7 +257,7 @@
                 
                      <p class="copyright-item">
                          <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY<strong>?</span>
+                         <span>努力成长为一名真正的 <strong>computer engineer</strong>。</span>
                      </p>
                 
 
@@ -268,10 +265,10 @@
         
         <section class="post-tags">
             <div>
-                <span>Tag(s):</span>
+                <!-- <span>Tag(s):</span>
                 <span class="tag">
                     
-                </span>
+                </span> -->
             </div>
             <div>
                 <a href="javascript:window.history.back();">back</a>
