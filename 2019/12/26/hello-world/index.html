@@ -6,8 +6,6 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="author" content="Hank-Yan">
-
 
     <meta name="subtitle" content="Hank-Yan">
 
@@ -95,6 +93,12 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
                 <input id="switch_default" type="checkbox" class="switch_default">
                 <label for="switch_default" class="toggleBtn"></label>
             </div>
@@ -114,6 +118,12 @@
             <div class="menu" id="mobile-menu">
                 
                     <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
                 
             </div>
         </div>
@@ -207,14 +217,19 @@
             
                 <div class="post-meta">
                     
-                        Author: <a itemprop="author" rel="author" href="/">Hank-Yan</a>
-                    
 
                     
                         <span class="post-time">
                         Date: <a href="#">十二月 26, 2019&nbsp;&nbsp;10:23:06</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%9D%82%E6%96%87/">杂文</a>
+                            
+                        </span>
                     
                 </div>
             
@@ -226,16 +241,16 @@
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"我的文章"</span></span><br></pre></td></tr></table></figure>
 
 <p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="启动本地服务器（用于演示效果）"><a href="#启动本地服务器（用于演示效果）" class="headerlink" title="启动本地服务器（用于演示效果）"></a>启动本地服务器（用于演示效果）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server 或者 hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="启动本地服务器（用于演示效果）"><a href="#启动本地服务器（用于演示效果）" class="headerlink" title="启动本地服务器（用于演示效果）"></a>启动本地服务器（用于演示效果）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server 或者 hexo s (hexo clean &amp;&amp; hexo g &amp;&amp; hexo s)</span><br></pre></td></tr></table></figure>
 
 <p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate 或者  hexo g</span><br></pre></td></tr></table></figure>
 
 <p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="发布到远端"><a href="#发布到远端" class="headerlink" title="发布到远端"></a>发布到远端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy 或者  hexo d</span><br><span class="line">$ 发布比较常用的命令， hexo clean &amp;&amp; hexo d  （直接清空目录，然后上传到远端）</span><br></pre></td></tr></table></figure>
+<h3 id="发布到远端"><a href="#发布到远端" class="headerlink" title="发布到远端"></a>发布到远端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy 或者  hexo d</span><br><span class="line">$ 发布比较常用的命令， hexo clean &amp;&amp; hexo g &amp;&amp; hexo d  （直接清空目录，然后上传到远端）</span><br></pre></td></tr></table></figure>
 
 <p>查看更多细节，请点击链接: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="新建-tag-和-category"><a href="#新建-tag-和-category" class="headerlink" title="新建 tag 和 category"></a>新建 tag 和 category</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tag</span><br><span class="line">$ hexo new page category</span><br></pre></td></tr></table></figure>
+<h3 id="使用-tag-和-category"><a href="#使用-tag-和-category" class="headerlink" title="使用 tag 和 category"></a>使用 tag 和 category</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tag</span><br><span class="line">$ hexo new page category</span><br><span class="line">$ 在文件头部，标明 layout , 如下是 category 对应的 layout.</span><br><span class="line">---</span><br><span class="line">title: category</span><br><span class="line">layout: category</span><br><span class="line">date: 2019-12-27 08:39:21</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -244,7 +259,7 @@
                 
                     <p class="copyright-item">
                         <span>Author:</span>
-                        <span>Hank-Yan</span>
+                        <span></span>
                     </p>
                 
                 
@@ -268,6 +283,10 @@
                 <!-- <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/%E9%9A%8F%E7%AC%94/"># 随笔</a>
+                    
+                        
                 </span> -->
             </div>
             <div>
@@ -288,7 +307,7 @@
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© Hank-Yan | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 
