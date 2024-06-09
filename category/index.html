@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="闫浩强">
+
+
+    <meta name="subtitle" content="Hank-Yan">
+
+
+    <meta name="description" content="闫浩强">
+
+
+    <meta name="keywords" content="Hank-Yan, yanhaoqiang, 闫浩强, 算法, 大数据">
+
+
+<title>category | Hank-Yan</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">领悟数据之美</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/category">分类</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">领悟数据之美</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/category">分类</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+
+
+
+    <div class="container">
+        <div class="post-wrap categories">
+            <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
+            <div class="categories-card">
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E6%9D%82%E6%96%87/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    杂文
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" href="/2018/07/28/hello-world/">使用 hexo 写博客的一些语法参考</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    编程语言
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/O9nZNGCDNQZWDxQmLiG39g">javacpp实战-从零开始111</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    大数据
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/I68SHNv9vojL0IaD6lFPEA">hive 库表数据就绪检查111</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    数据分析
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" href="/2020/07/28/python-t-%E5%88%86%E5%89%B2%E7%AC%A6%E5%BC%95%E8%B5%B7%E7%9A%84bug/">python \t 分割符引起的BUG</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    数据处理基础
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" target="_blank" rel="noopener" href="https://92847138.wiz06.com/wapp/pages/view/share/s/2ix74U3pWQ2w2ZXkcb3bD-JT0FZHeb2JAk8J2min3t0smd09">python 包机制详解111</a>
+                                         
+                                    </article>
+                                
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" href="/2020/07/08/python-%E6%97%A5%E6%9C%9F%E6%A8%A1%E5%9D%97%EF%BC%88time-datetime-%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85%E6%A5%9A%EF%BC%89/">python 日期模块（time/datetime 傻傻分不清楚）</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/spark%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    spark源码学习
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" target="_blank" rel="noopener" href="https://juejin.cn/post/7077192588809207821/">spark源码阅读环境搭建111</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    数据可视化
+                                </h3>
+                            </a>
+                            
+                                
+                                    <article class="archive-item">
+                                        
+                                            <a class="archive-item-link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/u51Oo16gd8Lt5N541mGJkA">使用plotly绘制桑基图【西安迁徙人口为例】111</a>
+                                         
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 闫浩强 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
